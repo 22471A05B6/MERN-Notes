@@ -1,0 +1,2951 @@
+24-04-25
+--------------------------
+Anchor tag----used to add links to your page
+<a href="https://google.com"target="_main">Google</a>----------the google open on new tab when we use target="_main"
+Image tag---use to add images to your page
+<img src="./Images/i1.jpg" alt="">
+Break tag---used to add text in  next line
+<br>
+Bold,Italic,underline------
+<b>Bold</b>
+<i>italic</i>
+<u>underline</u>
+big & small tags------
+<big>big content</big>
+<small>to displat small content</small>
+horizontal tag-----for horizontal line
+<hr>
+subscript & superscript------------
+<p>H<sub>2</sub>o</p>
+<p>A<sup>n</sup>+B</p>
+pre tag----used to display text as it is (without ignoring spaces & next line)
+<pre> this 
+is 
+example</pre>
+
+page layot techniques-------------
+using semantic tags(name itself containing the meaning for creating the better structure of the web page)for layout
+<header>
+<main>
+<footer>
+
+inside main tag----
+section tag--for creating sections
+<section>
+article tag---for an article on your page
+<article>
+aside---
+<aside>
+
+---------Div tag--------
+div is a container used for other html elements
+Block element(takes full width)
+---span tag--
+span is also a container  used for other html elements
+inline element(full as per widthy size)
+
+
+###<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Narasaraopeta</h1>
+    <h2>Enginnering</h2>
+    <h3>College</h3>
+    <h4>Narasaraopet</h4>
+    <h5>palnadu</h5>
+    <h6>Andhra Pradesh</h6>
+    <p>welcome</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus laboriosam, facere error officiis voluptates deleniti praesentium id minima quo, excepturi dicta sed provident dolor in reprehenderit quia vel itaque minus?</p>
+    <a href="https://google.com"target="_main">Google</a>
+    <img src="./Images/i1.jpg" alt="">
+    <b>Bold</b>
+    <i>italic</i>
+    <u>underline</u>
+    <big>big content</big>
+    <small>to display small content</small>
+    <hr>
+    <p>H<sub>2</sub>o</p>
+    <p>A<sup>n</sup>+B</p>
+    <pre>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi excepturi amet consequatur et fuga saepe a impedit assumenda placeat non. Sequi corrupti laboriosam consectetur quis, eaque accusamus ipsum quaerat fugiat!
+    </pre>
+    <pre> this 
+        is 
+        example</pre>
+
+</body>
+</html>####
+ table----
+<table>
+<tr>--row
+<th>--heading
+<td>--data
+colspan='n'--used to create cells which spans over multiple columns
+iframe tag----
+website inside website
+<iframe src="link">link</option>
+
+
+
+25-04-25
+----------------------------
+----form in html----
+form are used to collect the data from the user
+ex-signup,login,help request,contact me
+<form>
+form content
+</form>
+Action in form action attribute is used to define what action needs to be performed 
+form element:input
+<input type="text" placeholder"Enter name">
+label---
+<label for="idl">
+         <input type="radio" value="class X" name="class" id="id1" >
+</label>
+Checkbox---
+<label for="idl">
+         <input type="checkbox" value="class X" name="class" id="id1" >
+</label>
+TextArea---
+<textarea name="feedback" id="feedback" placeholder="please add feedback">
+</textarea>
+select----">
+<select name="city" id="city">
+    <option value="Delhi">Delhi</option>
+    <option value="Delhi">Delhi</option>
+</select>
+video tag---
+<video src="myVid.mp4">My video</video>
+Attributes
+----------
+control
+height
+width
+loop
+autoplay
+muted
+css(cascanding style sheets)------describes how html elements are to be displayed on screen,paper, or in other media
+external elements are stored in css files
+types-----
+inline
+inside
+external
+selectors------
+universal selector
+element selector
+class selector(.)---specifies one or more classnames for an element
+---mostly used to point to a class in a style sheets
+id selector(#)---
+
+
+important css properties
+font-style---like arial,sanfris
+font-weight---for font bold (thick letters)bold,100 to 1000
+text-decoration---underline,overline,line through,none
+border---ex:border:2px solid red;
+border-width---in px
+margin---space between one content and other content(margin-top,right,bottom,left)
+padding--the space around the content (padding-top,right,bottom,left)
+           refer----box model
+           margin--->border-->padding-->content
+color
+background-color
+cursor---pointer,crosshair,move
+font-size
+font-family
+backround-image
+border-radius
+height---100px-50%
+weight
+
+rem(root element)
+em
+peudo elements
+hover
+first-letter
+first-line
+before
+after 
+selection
+
+float property---used for positioning and formatting content
+
+
+26-04-25
+----------------------
+positioning---specifices the type of positioning method
+types--
+static---can't move
+relative-- move anywhere the content in the webpage
+fixed---
+absolute----
+sticky--
+
+elements are then positioned using top,bottom,left and right properties.
+--z-index----
+stack order of an element
+z-index only works on positioned element (position:absolute,relative,fixed,sticky,static)
+
+overflow--
+The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.
+
+The overflow property has the following values:
+
+visible - Default. The overflow is not clipped. The content renders outside the element's box
+hidden - The overflow is clipped, and the rest of the content will be invisible
+scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content
+auto - Similar to scroll, but it adds scrollbars only when necessary
+
+
+display---specifies if/home an element is displayed
+types---
+none
+inline
+block
+inline-block
+
+grid---The Grid Layout Module offers a grid-based layout system, with rows and columns.
+you can adjust the gap size by using one of the following properties
+column-gap
+row-gap
+gap
+
+
+responsive---
+Responsive web design makes your web page look good on all devices.
+Responsive web design uses only HTML and CSS.
+Responsive web design is not a program or a JavaScript.
+device                  device size
+------                  ------------
+extra small device       <576px
+small device             >=576px
+medium devices           >=768px
+large device             >=992px
+
+
+28-04-25
+----------------
+Bootstrap----
+bootstrap is a large collections of predefined code snippets which is written in html,css,js
+example--navbar,button,background
+bootstrap is created by twitter
+
+btn btn-primary--> displays button in blue color
+       -secondary---grey color
+
+
+
+
+layout methods
+firstly desiging layouts as developers has huge demand in it industry
+2 types
+flexbox(stable)
+css grid(unstable)
+
+bootstrap grid system ---
+uses series of containers,rows and columns(it contain 12 rows amd 12 columns)
+ margin prefix
+margin=m-
+margin-top=mt-
+      -right=mr-
+      -bottom=mb-
+marfin size & values=0 to 5
+
+0----0
+1----0.25*spacer(16px)
+2----0.5*spacer
+3----1*spacer
+4-----1.5*spacer
+5-----3*spacer
+
+css gradients are mainly 2 types
+linear gradient
+radial gradient
+
+also have direction
+top
+bottom(default)
+left
+right.
+
+width=w-
+width values
+----------
+w-25(25%)
+w-50(50%)
+w-75(75%)
+w-100(100%)
+
+shadow prefix
+-----
+shadow-none
+
+introduction of javascript(29-04-25)
+---------------------------------
+javascript is a scripting language as well as a programming language.
+****it is single threaded(it execute the task single time) synchronous(it execute line by line code if any error exits the code terminates.async operations await,promise ---it is  used to converte the asynchronous to synchronus) programming languages which  converts static pages to dynamic pages****
+--it is a high level language which comes from ECMA script specification
+--scripting languages are tanslated and connot be converted  into an executable file.it can combine existing modules or components
+---programming language 
+
+where we are using javascript?
+for dynamic web webpages
+for sending data to servers
+for storing info in variables
+it completely helps to bulid websites
+js is used to make dynamic webpages
+
+<script>----it is used to write js code in bottom of body.
+const----
+const a=10
+ it can't be redeclared and can't be reassign
+let---
+let  can't be reassign
+can redeclared
+Operation	Description	Allowed with let	Allowed with const	Allowed with var
+Redeclaring	Declaring the same variable again	❌	❌	✅
+Reassigning	Changing the value of a variable	✅	❌	✅
+hoisting---hosting is javascript behaviour where js fuctions are at top
+global scope--ex:var
+function scope---inside the fuction
+Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their scope (global or local) before code execution.
+console.log(x); // undefined
+var x = 5;
+
+
+console.log(y); // ❌ ReferenceError
+let y = 10;
+They are hoisted but cannot be accessed until the line where they are defined
+
+Keyword   	Hoisted?	Value before declaration
+var	         Yes	             undefined
+let / const	Yes (in TDZ)	   ❌ ReferenceError
+function	Yes	            Fully usable
+class	       Yes (in TDZ)	    ❌ ReferenceError
+
+
+example:
+var a=10
+function add():{
+    b=20
+    c=a+b
+    console.log(c)
+}
+add()
+
+output:30
+-------------
+let a=10
+function add():{
+    b=20
+    c=a+b
+    console.log(c)
+}
+add()
+ 
+output:30
+
+data types----2--
+--primitive-we cannot store multiple values
+string
+number
+bigint
+Boolean
+symbol
+undefined
+null
+--non primitive--we can store multiple values,types
+arrays
+object
+
+object syntax:---let variable_name={key:value,key:value,......}
+
+operators----
+Arithmetic operator
+comparsion(relational)operators
+bitwise operators
+logical operators
+assignment operators
+
+ Arithmetic Operators
+Operator	Description
++	Addition
+-	Subtraction
+*	Multiplication
+**	Exponentiation (ES2016)
+/	Division
+%	Modulus (Division Remainder)
+++	Increment
+--	Decrement
+
+Comparison Operators
+Operator	Description
+==	equal to
+===	equal value and equal type
+!=	not equal
+!==	not equal value or not equal type
+>	greater than
+<	less than
+>=	greater than or equal to
+<=	less than or equal to
+?	ternary operator
+bitwise operators
+Operator	Description	Example	Same as	Result	Decimal
+&	AND	5 & 1	0101 & 0001	0001	 1
+|	OR	5 | 1	0101 | 0001	0101	 5
+~	NOT	~ 5	 ~0101	1010	 10
+^	XOR	5 ^ 1	0101 ^ 0001	0100	 4
+<<	left shift	5 << 1	0101 << 1	1010	 10
+>>	right shift	5 >> 1	0101 >> 1	0010	  2
+>>>	unsigned right shift	5 >>> 1	0101 >>> 1	0010	  2
+logical operator
+Operator	Description
+&&	logical and
+||	logical or
+!	logical not
+
+conditional statements-3
+if statement
+else statement
+else if statement
+
+if Statement---
+Syntax
+if (condition) {
+  //  block of code to be executed if the condition is true
+}
+else Statement-------
+Use the else statement to specify a block of code to be executed if the condition is false.
+
+if (condition) {
+  //  block of code to be executed if the condition is true
+} else {
+  //  block of code to be executed if the condition is false
+}
+
+else if Statement--------
+Use the else if statement to specify a new condition if the first condition is false.
+
+Syntax
+if (condition1) {
+  //  block of code to be executed if condition1 is true
+} else if (condition2) {
+  //  block of code to be executed if the condition1 is false and condition2 is true
+} else {
+  //  block of code to be executed if the condition1 is false and condition2 is false
+}
+
+example:1
+//score
+let m=prompt("enter marks")
+if(m>=90 & m<=100){
+    console.log("A grade")
+}
+
+else if(m>=80 & m<=89){
+    console.log("B grade")
+}
+
+else if(m>=70 & m<=79){
+    console.log("C grade")
+}
+
+else if(m>=60 & m<=69){
+    console.log("D grade")
+}
+
+else if(m>=0 && m<=59){
+    console.log("E grade")
+}
+
+else{
+    console.log("invalid score")
+}
+
+example:2
+//fizzbuzz
+let m=prompt("enter number")
+if(m%3==0 & m%5==0){
+    console.log("Fizzbuzz")
+}
+else if(m%5==0)
+{
+    console.log("Buzz")
+}
+else if(m%3==0 ){
+    console.log("fizz")
+}
+else
+{
+    console.log(m)
+}
+
+Loop----Loops are used when we need to run the same code lines many times.
+while
+for
+in loop we hav einitialization,condition,iteration
+For loop:
+syntax
+for(expression1;expression2;expression3){
+//code block to be executed
+}
+for-of loop:string
+for(let val of strvar){
+//code some work
+}
+for-in loop:objects
+for(let key in objVar){
+//code some work
+}
+Example:
+let password = prompt("Enter password ")
+let hasUpperCase=false;
+let hasLowerCase=false;
+let hasNumber=false;
+let hasSpecialChar=false;
+for(let char of password){
+    if(char>='A' & char<='Z') hasUpperCase=true;
+    else if(char>='a' & char<='z') hasLowerCase=true;
+    else if(char>='0' & char<='9') hasNumber=true;
+    else hasSpecialChar=true;
+}
+ let strength;
+ if(password.length>=12 & hasUpperCase & hasLowerCase & hasNumber & hasSpecialChar){
+     strength="Very Strong";
+     
+ }
+ else if(password.length>=8 & hasUpperCase & hasLowerCase & hasNumber & hasSpecialChar){
+     strength="Strong";
+ }
+ else if(password.length>=6 & hasUpperCase & (hasLowerCase || hasNumber )){
+     strength="Medium";
+ }
+ else{
+     strength="Weak";
+ }
+ console.log('Password Strength:${strength}');
+
+
+30-04-25
+-----------------
+example1:
+let age=prompt("enter age")
+isStudent=true;
+if(age<12){
+    console.log("$5")
+}
+else if(age>=12 && age<=18 && isStudent){
+    
+    console.log("$8")
+}
+else if(age>=65){
+    console.log("$5")
+}
+else{
+    console.log("$15")
+}
+example2:
+let num=prompt("enter number")
+if(num%2==0 && num>0){
+   console.log("Even Postive") 
+}
+else if(num%2==0 && num<0){
+   console.log("Even negative")
+}
+else if(num%2!=0 && num>0){
+    console.log("odd Postive")
+}else if(num%2!=0 && num<0){
+    console.log("odd negative")
+}
+else{
+    console.log('Zero')
+}  
+
+        (or)
+ let n=prompt("enter number")
+if(n!=0 && n%2==0){
+    if(n>0){
+        console.log("Even Postive")
+    }
+    else{
+        console.log("Even Negative")
+    }
+}
+else if(n%2!=0){
+     if(n>0){
+        console.log("Odd Postive")
+    }
+    else{
+        console.log("Odd Negative")
+    }
+    
+}
+else{
+    console.log("Zero")
+}
+example 3:day of the weeks
+let day=parseInt(prompt("enter day: "))
+let dayname;
+switch(day){
+   case 1:
+         dayname="monday"
+         break;
+   case 2:
+         dayname = "Tuesday";
+        break;
+  case 3:
+    dayname = "Wednesday";
+    break;
+  case 4:
+    dayname = "Thursday";
+    break;
+  case 5:
+    dayname = "Friday";
+    break;
+  case 6:
+    dayname = "Saturday";
+    break;
+   case 7:
+    dayname = "Sunday";
+    break;
+  default:
+    dayname = "Invalid day name";
+    break;
+}
+console.log(dayname)
+example:4
+simple calculator
+let a=parseInt(prompt("enter a number"))
+let b=parseInt(prompt("enter a number"))
+let operator=prompt("enter operator")
+let result;
+switch(operator){
+    case '+':
+        result=a + b;
+        break;
+    case '-':
+        result=a-b;
+        break;
+    case '*':
+        result=a*b;
+        break;
+    case '/':
+        result=a/b;
+        break;
+    default:
+    console.log("Invalid operator")
+}
+console.log(result)
+
+example 5:
+leap year
+let y=prompt("enter year")
+if((y%4==0 &&  y%100!==0) || y%400===0 ){
+    console.log("leap year")
+}
+else{
+    console.log("not leap year")
+}
+example 6:
+largest of three numbers
+let a=prompt("enter a number")
+let b=prompt("enter a number")
+let c=prompt("enter a number")
+if(a>b && a>c){
+    console.log("a is big")
+}
+else if(b>c && b>a){
+    console.log("b is big")
+}
+else{
+    console.log("c  is big")
+}
+
+example 7:
+vowels and consonents checker
+
+let v= prompt("enter a vowel")
+isUppercase=true;
+isLowerCase=true;
+if((v=="a" ||v=="e" ||v=="i"||v=="o"||v=="u") && isLowerCase){
+    isLowerCase=false;
+    console.log("vowels")
+}
+else if((v=="A" ||v=="E" ||v=="I"||v=="O"||v=="U") && isUppercase){
+    isUpperCase=false;
+    console.log("vowels")
+}
+else{
+    console.log("consonents")
+}
+
+example:8
+sum of digits
+
+let num = 1234;
+let sum = 0;
+
+while (num > 0) {
+  let digit = num % 10;   // Get last digit
+  sum += digit;           // Add it to sum
+  num = Math.floor(num / 10); // Remove last digit
+}
+
+console.log("Sum of digits:", sum); // Output: 10
+
+example9: 
+factorial of number
+function fact(n){
+    if(n==1 || n==0){
+        return 1
+    }
+    else{
+        return n*fact(n-1)
+    }
+}
+let n=prompt("enter number")
+console.log(fact(n))
+
+     (or)
+
+let num = 5; // You can change this value
+let factorial = 1;
+
+for (let i = 1; i <= num; i++) {
+  factorial *= i;
+}
+
+console.log("Factorial of", num, "is", factorial);
+ example 10:reverse of number
+let n=prompt("enter number")
+ let r=0;
+ while(n>0){
+     let d=n%10
+     r=r*10+d
+     n=Math.floor(n/10)
+ }
+ console.log(r)
+
+example:11--palindrome
+let n=prompt("enter ")
+let newinput=input.toUpperCase
+let r=""
+for(let i=newinput.length-1;i>=0;i--){
+    r+=newinput[i]
+}
+if(newinput===r){
+    console.log("is a palindrome")
+}
+else{
+     console.log("is a  not palindrome")
+}
+
+
+Array:in javascript Array is a collection of same and different datatype
+example
+let heroes={"ironman","hulk","batman"};
+let marks={98,87,45};
+let info={"Rahul",34,"delhi"};
+example1:max number in array
+let array=[13,67,094,87]
+let max=array[0];
+for(let i=1;i<array.length;i++){
+    if(max<array[i]){
+        max=array[i]
+    }
+}
+console.log(max)
+
+
+example2:duplicate in array
+let array=[1,2,1,2,4,5,3,6,4,3]
+let uniquearray=[]
+for(i=0;i<array.length;i++)
+{
+    let isUnique=false;
+    for(j=0;j<uniquearray.length;j++){
+        if(uniquearray[j]==array[i]){
+            isUnique=true;
+            break
+        }
+    }
+    if(!isUnique){
+        uniquearray.push(array[i])
+    }
+}
+console.log(uniquearray) 
+
+
+example3:longest word in array
+let str=prompt("enter the string to calculate longest word:")
+let word=str.split(" ")
+let longest=""
+for(let i=0;i<word.length;i++){
+    if(word[i].length>longest.length){
+        longest=word[i]
+    }
+}
+console.log(longest)
+
+forEach loop in arrays--->it can be used for objects and arrays
+map,filter,reduce,foreach used for manipulation in json data
+
+Array methods
+push()
+pop()
+tostring()
+concat()
+unshift():add to start
+shift():delete start and end
+slice():
+syn=slice(startindex,endindex)
+splice():change original array(add,remove,replace)
+syn=splice(startindex,delcount,newelement...)
+
+
+-----objects---
+In javascript objects is a datastructure which can stores properities and methods
+properities:a named values that describes the object characteristics
+method: a functions that can be performed on a methods
+syntax
+let object={1:"apple",2:"banana",3:"mango"};
+
+
+---functions---
+block of code that perform a specific task,can be invoked whenever needed
+there are 7 types of function
+1.named function--->(pure function)
+syntax
+function function_name()
+{
+//block of code
+}
+function_name()
+
+2.ananomous fuction
+syntax
+function()
+{
+//block of code
+}
+
+3.fuction expression
+syntax
+let expressionFunction =function()
+{
+//block of code
+}
+expressionFunction()
+
+4.arrow function
+syntax
+let arrowFunction =()=>
+{
+//block of code
+}
+arrowFunction 
+
+5.immediate invoke function
+syntax
+function function_name()
+{
+//block of code
+}()
+
+
+6.callback function-->it passed argument for another function
+
+7.higher order function--->a function can passed as a arguments in more than one.
+it returns output as a function only not any value
+
+
+
+1-05-25
+----------------------
+What is the DOM?
+The Document object Model(DOM) is a programming interface for HTML and XML documents.it represents the structure of a document as a tree of objects,allowing javascript to dynamically access and manipulate content ,structure and style
+                              DOM
+                         -----------
+                         DoctypeHTML
+                              |
+                            Html
+                         |          |
+                      Head         body
+                  |     |      |
+              Metadata title  links
+critical rendering part--->how the website works
+1.dom
+2.css omobject model
+3.render tree(javascript)
+4.html +cssom +render
+5.painting-->for display the website combining all 4 types
+6.composity-->it will check and get the tags in order way---
+ 
+Dom manipulations
+1.selectors
+2.eventlistners
+3.fetching
+
+example for Dom manipulation
+---------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">welcome to DOM</h1>
+    <script>
+        const heading=document.getElementById('heading');
+        heading.textContent="DOM manipulation in js";
+        heading.style.color="blue";
+        heading.style.padding="20px";
+
+    </script>
+    
+</body>
+</html>
+
+
+method--->example--->returns
+'getElementById()'--->document.getElementById('heading');--->single element
+'getElementByClassName()'--->document.getElementByClassName('btn');--->HTML collection(live)
+'getElementByTagName()'--->document.getElementByTagName('div');--->HTML collection
+'querySelector()'--->documnent.querySelector(".container")--->first matching element
+
+firstElementChlid
+lastElementChlid
+innerHTML----adding dynamic content in webpage
+example
+-----------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">welcome to DOM</h1>
+    <div class="container">
+        <p>hi hello welcome</p>
+    </div>
+    <button class="btn">button1</button>
+    <button class="btn">button2</button>
+    <ul id="list">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+    <p id="firstdiv">hello</p>
+    <script>
+        const heading=document.getElementById('heading');
+        heading.textContent="DOM manipulation in js";
+        heading.style.color="blue";
+        heading.style.padding="20px";
+        const query=document.querySelector(".container")
+        query.textContent="welcome to query selector manipulation"
+        query.style.color="red";
+        query.style.marginLeft="20px"
+        const buttons=document.querySelectorAll(".btn");
+        buttons.forEach(item=>{
+            item.style.backgroundColor="blue"
+            item.style.marginLeft="20px"
+            item.style.padding="20px"
+            item.style.marginTop="20px"
+        })
+        const btns=document.getElementsByTagName("button")
+        btns.style.backgroundColor="red"
+        const list=document.getElementById("list");
+        const firstitem=list.firstElementChild;
+        const lastitem=list.lastElementChild;
+        firstitem.style.color="red";
+        lastitem.style.color="pink";
+        const maindiv=document.getElementById("firstdiv")
+        maindiv.innerHTML="<h1>welcome to the world</h1>"
+        
+    </script>
+    
+</body>
+</html>
+
+
+method--->example--->effect
+crateElement()-->document.creatElement("div")---->creates a new element
+appendChlid()-->parent.appendChild(newElement)-->adds to the end
+removeChlid()--->parent.removeChlid(child)--->removes the child
+setAttribut()--->element.setAttribute("hreff","#")-->sets an attributes
+example: const link=document.getElementById("anchor");
+        link.setAttribute("href","https://www.youtube.com/")
+getAttribute
+remove attribute
+example:
+ const links=document.querySelector("a")
+        links.getAttribute("href")
+        links.setAttribute("target","_blank")
+        links.removeAttribute("target")
+        
+Event handling
+----------------
+applying event listeners
+
+for login form
+---------------
+ <script>
+        
+        const form=document.getElementById("loginform");
+        form.addEventListener("submit",(e)=>{
+            e.preventDefault();
+            const name=document.getElementById("name").value;
+        console.log("Username",name);
+        const email=document.getElementById("email").value;
+        console.log("Emailid",email);
+        const pass=document.getElementById("pass").value;
+        console.log("Password",pass);
+        })
+
+    </script>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form">
+        <h1 text aligin=""centre>Registration Form</h1>
+    <form id="loginform">
+        
+        <label for="name" id="u1">Username</label> <input type="text" id="name" placeholder="Enter username"><br>
+        <label for="email">Emailid</label> <input type="email" id="email" placeholder="Enter email"><br>
+        <label for="pass">Password</label><input type="password" id="pass" placeholder="Enter password"><br>
+        
+        <button id="button">Submit</button>
+        
+
+        <p id="display"></p>
+        <p id="dis"></p>
+        <p id="play"></p>
+        
+
+
+    </form>
+</div>
+    <script>
+        
+        const form=document.getElementById("loginform");
+        form.addEventListener("submit",(e)=>{
+            e.preventDefault();
+            const name=document.getElementById("name").value;
+        console.log("Username",name);
+        const email=document.getElementById("email").value;
+        console.log("Emailid",email);
+        const pass=document.getElementById("pass").value;
+        console.log("Password",pass);
+        const display=document.getElementById("display");
+        display.innerHTML="welcome"+name
+        const dis=document.getElementById("dis");
+        dis.innerHTML="welcome"+email
+        const play=document.getElementById("play");
+        play.innerHTML="welcome"+pass
+        })
+
+    </script>
+</body>
+</html>
+
+
+2-05-25
+--------------------
+what is a closure?
+A closure is created when a function "remembers" its lexical scope,even when that function is executed outside of its original scope
+
+callback function--a function argumentis calls in another function
+
+ 3-05-25
+-----------
+setTimeout syntax
+call back in asynchronous code(eg:`setTimeout)
+console.log("start")
+setTimeout(function(){
+console.log("callback after 2 months");},2000);
+console.log("end");
+
+what is a promise?
+A promise is a javascipt object that represents the eventual completion (or failure) of an asynchronous operations.
+it has 3 states
+1.pending--inital states,neitherr fulfilled nor rejected
+2.fulfilled--operation completed successfully
+3.rejected--operation failed
+
+syntax
+const promise=new promise((resolve,reject)=>{
+//async task
+if(condition){
+//block of code in async task
+}
+});
+
+example1:synchronous
+const checkAge=new Promise((resolve,reject)=>
+{
+    const age=20
+    if(age>=18){
+        resolve("acess granted")
+    }
+    else{
+        reject("acess denied")
+    }
+})
+checkAge
+.then((message)=>{
+    console.log(message);
+})
+.catch((error)=>{
+    console.log(error);
+});
+
+example2:asychronous
+
+function fetchData(){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            const sucess=true;
+            if(sucess){
+                resolve("Data Fetched ");
+            }
+                else{
+                    reject("Failed to fetched data")
+                }
+            
+        },2000)
+    })
+}
+fetchData()
+.then((data)=>console.log(data))
+.catch((data)=>console.log(data))
+
+promises chaining
+---------------
+function step1(){
+return new promise((resolve)=>{
+setTimeout()=>{
+console.log("step 1 done");
+resolve();
+},1000);
+})
+what is async?
+async and await are modern javascrit features used to handle asynchronous operations in a clean ,readable way-specially when working with promises.
+The async keyword is added to a function to make it return a promises automatically.
+even if the function return  value,javascript wraps it is a promises.
+Async function returns the  value is promise.
+The await keyword is only used in inside an async function.
+It pauses the execution of the async function until the promises is resolved then resume with the result.
+
+5-05-25
+--------------
+map()---the method create a new array by applying a function to each element
+
+filter()-----the filter() method cretes a new array with only the elements that pass a test(return true).
+example--
+const number=[1,2,3,4,5]
+const even=number.filter(num=>num%2===0);
+console.log(even)//2,4
+
+reduce()---the reduce method reduces the array to a single value by applying a function to each eelement and accumulating the result.
+example--
+const number=[1,2,3,4,5]
+const sum=number.reduce((accumulator,current)=>accumulator+current,0);
+console.log(sum)//10
+
+spread operator(...)
+----------------------------
+the spread operator is used to unpack elements from arrays 0r objects.
+use cases----
+copying arrays
+merging array or objects
+passing array elements as individual arguments
+example--
+##copying an array
+const arr1=[1,2,3,4,5]
+const arr2=[...arr1]; //[1,2,3,4,5]
+
+##merging array
+const arr3=[4,5]
+const merged=[...arr1,...arr3] //[1,2,3,4,5,4,5]
+
+##passing elements in a function
+function add(a,b,c)
+{
+  return a+b+c
+}
+const num=[1,2,3]
+console.log(add(...num))
+
+
+Rest operator('...)
+---------------------
+ the rset operator is used to collect in a single array .it is used in function parameters or destructing
+use cases---
+function with variables number of arguments
+destructing objects or array
+
+examples
+##function parameters
+ function sum(...number)
+{
+   return number.reduce((total,num)=>total+num,0);
+}
+console.log(sum(1,2,3,4,5));//10
+
+##array destructing
+const[first,...rest]=[10,20,30,40];//first=10,rest=[20,30,40]
+
+##object destructing
+const person={name:"bob", age:30,city:"paris"};
+const{name,...other details}=person;//name="bob",other details={age:30,city:"paris"}
+
+shallow copy
+---------------
+a shallow copy  copies only the top-level values.if the object has nested objects or arrays,the nested references  are still shared.
+
+example
+const original={
+  name:"alice"
+  details:{
+     age:25
+  }
+}
+const shallowcopy={...original}
+console.log(shallowcopy)//{name:"alice",details:{age:25}}
+
+//modify nested object
+shallowcopy.details.age=30;
+console.log(original.details.age);//30
+
+example----
+const original={
+    name:"alice",
+    details:{
+        age:25,
+        address:"guntur",
+  }
+}
+const shallowcopy={...original}
+//console.log(shallowcopy)//{name:"alice",details:{age:25}}
+//modify nested object
+shallowcopy.details.age=30;
+//console.log(original.details.age);//30
+//modify nested object
+shallowcopy.details.address="nrt";
+console.log(shallowcopy.details);//{ age: 30, address: 'nrt' }
+console.log(shallowcopy.name="bob")//bob
+
+deep copy
+-----------------
+a deep copy copies all levels of the object or array.no references are shared everything is fully cloned.
+
+example
+
+const original={
+    name:"alice",
+    details:{
+        age:25,
+        address:"guntur",
+  }
+}
+const deepcopy=structuredClone(original);//structuredClone is a  bulit in function.
+const dpcopy=JSON.parse(JSON.stringfy(original));
+deepcopy.details.age=30
+console.log(original.details.age)//25
+console.log(deepcopy.details.age)//30
+console.log(original)//not effected
+console.log(deepcopy)
+
+JSON(javascript object notation)
+---------------------------------------
+JSON is a light weight format to store and exchange data.it is like a javascript object but in string format
+
+example---
+##parse JSON string to object:
+const jsonString='{"name":"alice","age":25}';
+const obj=JSON.parse(jsonString);
+console.log(obj.name)//alice
+
+##convert object to JSON string:
+const user={name:"bob",age:30};
+const jsonString=JSON.stringfy(user)
+console.log(user)
+
+
+Fetch JSON data(from APIs)
+-------------------------
+basic syntax:
+fetch('https://api.example.com/data')
+ .then(response=>response.json())//convert response to json
+ then(data=>{
+  //use data 
+  console.log(data);
+})
+.catch(error=>console.log('error:',error));
+weather app//basic for one city in console
+const  apiKey="8becb4974cdb2db06c5786776f5bf9c9";
+const city="Guntur"
+const apiUrl=`https://api.openweathermap.org/data/2.5/weather?units=metric&q=${city}`;
+const weather=async()=>{
+   
+    const response=await fetch(apiUrl + `&appid=${apiKey}`);
+    const data =await response.json();
+    console.log(data);
+}
+weather()
+
+06-05-25
+---------------------
+
+weather app code
+-----------------------------
+index.html
+
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="container-fluid" id="main_container">
+    <h1 id="heading">Weather App</h1>
+    <button class="btn btn-outline-light btn_dark_mode" id="lightMode_btn" type="submit">lightMode</button>
+    <button class="btn btn-outline-dark btn_dark_mode" id="darkMode_btn" type="submit">DarkMode</button>
+    <form class="d-flex" id="search_bar">
+      <input class="form-control me-2" type="search" id="search_input" placeholder="Enter your city to Search"
+        aria-label="Search">
+      <button class="btn btn-outline-danger btn_submit" id="search_btn" type="submit">Search</button>
+    </form>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6 col-md-6" id="temperature_display">
+        <div class="card weather_card mx-auto">
+          <div class="card-body text-center">
+            <h5 class="card-title">City</h5>
+            <img src="images/download.jpg" alt="Weather Icon" id="weatherImg" class="weather-icon img-fluid mb-2">
+            <p class="temp_display">__°C</p>
+            <p class="card-text">_</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-6" id="converter">
+        <button id="degree_celsius" class="btn btn-outline-danger">Degree celsius</button>
+        <button id="fahreinheit" class="btn btn-outline-danger">Fahreinheit</button>
+      </div>
+    </div>
+  </div>
+  <h1 id="heading">Weather forecast for the next five days</h1>
+  <div class="container-fluid" id="Future_data">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+        <div class="card future-weather-card mx-auto">
+          <div class="card-body text-center">
+            <h5 class="card-title">Day</h5>
+            <img src="images/download.jpg" alt="Weather Icon"
+              class="weather-icon mb-2">
+            <p class="card-text">__°C</p>
+            <p class="card-text">_</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+        <div class="card future-weather-card mx-auto">
+          <div class="card-body text-center">
+            <h5 class="card-title">Day</h5>
+            <img src="images/download.jpg" alt="Weather Icon"
+              class="weather-icon mb-2">
+            <p class="card-text">__°C</p>
+            <p class="card-text">_</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+        <div class="card future-weather-card mx-auto">
+          <div class="card-body text-center">
+            <h5 class="card-title">Day</h5>
+            <img src="images/download.jpg" alt="Weather Icon"
+              class="weather-icon mb-2">
+            <p class="card-text">__°C</p>
+            <p class="card-text">_</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+        <div class="card future-weather-card mx-auto">
+          <div class="card-body text-center">
+            <h5 class="card-title">Day</h5>
+            <img src="images/download.jpg" alt="Weather Icon"
+              class="weather-icon mb-2">
+            <p class="card-text">__°C</p>
+            <p class="card-text">_</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+        <div class="card future-weather-card mx-auto">
+          <div class="card-body text-center">
+            <h5 class="card-title">Day</h5>
+            <img src="images/download.jpg" alt="Weather Icon"
+              class="weather-icon mb-2">
+            <p class="card-text">__°C</p>
+            <p class="card-text">_</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+index.css
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+#main_container {
+    padding: 20px;
+    background-color:rgb(9, 195, 219) ;
+    color: rgb(14, 121, 209);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+#heading {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(111, 95, 199);
+    margin-bottom: 20px;
+    text-align: center;
+}
+#darkMode_btn,#lightMode_btn{
+    margin-bottom: 20px;
+}
+
+#search_bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#search_bar input {
+    border-radius: 4px 0 0 4px;
+    border: 1px solid white;
+    padding: 10px;
+    flex: 1;
+    max-width: 500px;
+}
+
+
+#temperature_display {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#temperature_display .weather-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+#temperature_display .card-title{
+    color: #128ed6;
+}
+#temperature_display .card-text,.temp_display{
+    color: #12b9d6;
+}
+
+
+#card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+#converter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#degree_celsius, #fahreinheit {
+    margin-bottom: 20px;
+}
+
+#Future_data {
+    margin-top: 40px;
+}
+
+#Future_data .card {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#Future_data .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#Future_data .weather-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+
+}
+
+#Future_data .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1141dd;
+    margin-bottom: 10px;
+}
+
+#Future_data .card-text {
+    font-size: 16px;
+    color: #128ed6;
+}
+
+#Future_data .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#Future_data .col-12 {
+    max-width: 100%;
+}
+
+@media (min-width: 576px) {
+    #Future_data .col-sm-6 {
+        max-width: 48%;
+    }
+}
+
+@media (min-width: 768px) {
+    #Future_data .col-md-4 {
+        max-width: 30%;
+    }
+}
+
+@media (min-width: 992px) {
+    #Future_data .col-lg-2 {
+        max-width: 18%;
+    }
+}
+
+
+index.js
+
+
+let apiKey = "e25ddb66337bc8c7f6c572ffe0527d30";
+let apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+let searchInput = document.getElementById("search_input");
+let searchButton = document.getElementById("search_btn");
+let darkMode = document.getElementById("darkMode_btn");
+darkMode.addEventListener("click",()=>{
+    document.body.style.backgroundColor = "black"
+})
+let lightMode = document.getElementById("lightMode_btn");
+lightMode.addEventListener("click",()=>{
+    document.body.style.backgroundColor = "white"
+})
+let weatherData = async (lat, lon) => {
+    let forecastApiUrl =` https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+    let response = await fetch(forecastApiUrl);
+    let data = await response.json();
+    console.log(data);
+
+    let forecastContainer = document.getElementById("Future_data").querySelector(".row");
+    forecastContainer.innerHTML = "";
+
+    for (let i = 0; i < 5; i++) {
+        let dayData = data.list[i * 8];
+        let temp = Math.round(dayData.main.temp);
+        let description = dayData.weather[0].description;
+        let iconCode = dayData.weather[0].icon;
+        let dayName = new Date(dayData.dt * 1000).toLocaleDateString('en-US', { weekday: 'long' });
+
+        forecastContainer.innerHTML += `
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+                <div class="card future-weather-card mx-auto">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">${dayName}</h5>
+                        <img src="https://openweathermap.org/img/wn/${iconCode}@2x.png" alt="Weather Icon" class="weather-icon mb-2">
+                        <p class="card-text">${temp}°C</p>
+                        <p class="card-text">${description}</p>
+                    </div>
+                </div>
+            </div>`;
+    }
+};
+
+async function check(city) {
+    let response = await fetch(apiUrl + city + `&appid=${apiKey}`);
+    let data = await response.json();
+
+
+    document.querySelector('.card-title').innerHTML = data.name;
+    let temperature_value = Math.round(data.main.temp);
+    document.querySelector('.temp_display').innerHTML = `${temperature_value}`;
+    document.querySelector('.card-text').innerHTML = data.weather[0].description;
+
+    let weatherImg = document.getElementById("weatherImg");
+    if (temperature_value < 0) {
+        weatherImg.src = 'img/freezing.jpg';
+    } else if (temperature_value >= 0 && temperature_value < 10) {
+        weatherImg.src = 'img/Cold.jpg';
+    } else if (temperature_value >= 10 && temperature_value < 20) {
+        weatherImg.src = 'img/Cool.jpg';
+    } else if (temperature_value >= 20 && temperature_value < 30) {
+        weatherImg.src = 'img/Warm.jpg';
+    } else {
+        weatherImg.src = 'img/Hot.jpg';
+    }
+
+    let degree_celsius = document.getElementById("degree_celsius");
+    degree_celsius.addEventListener("click", () => {
+        document.querySelector('.temp_display').innerHTML = `${temperature_value}°C `;
+    });
+
+    let fareinheit = document.getElementById("fahreinheit");
+    fareinheit.addEventListener("click", () => {
+        let temperature_fahrenheit = (temperature_value * 1.8) + 32;
+        document.querySelector('.temp_display').innerHTML = `${temperature_fahrenheit.toFixed(2)}°F`;
+    });
+
+    await weatherData(data.coord.lat, data.coord.lon);
+}
+
+searchButton.addEventListener("click", async (e) => {
+    try {
+        e.preventDefault();
+        let city = searchInput.value;
+        await check(city);
+    }
+    catch {
+        alert("Enter city name correctly")
+    }
+});
+
+
+9-05-25
+----------------------
+
+React------------------
+Definition---It is a library--it is a collection of modules
+**react** is a powerful javascript library used to bulid reusable ui component and single page applications(SPAs) with fast rendering using the virtual DOM
+                       -------------------              ---------------------------------------------------                         ----------------------
+              
+DOM,virtual Dom is in browser 
+
+History of react?
+React was developed by Jordan walke a software engineer at Facebook.
+It is was developed in a facebook NEWS feed in 2011, and later in Instagram in 2012.React introduced in 2013 May.
+
+Why was React Created?
+Facebook faced challenges with:
+*updating the DOM efficiently 
+*Manging complex uis with a lot of dynamic data
+Advantages
+---------------
+they needed a fast ,reusable ,and maintainable.
+
+1.component-Based
+-----------------
+Break the ui into independent ,reusable pieces.
+Example:Navbar,sidebar,footer,card-all as separate components.
+
+2.Declarative Syntax
+-----------------------
+you declared what you want to show.
+react handles the rendering efficiently
+Examples:
+<h1>Hello{name}</h1>
+
+3.Virtual DOM
+--------------------
+React uses a virtual Dom to improve performance
+changes are made in memeory first,then synced with the real Dom-this is fast
+
+4.one-way data flow
+-------------------------
+data flow in one direction(top to bottom)
+
+5.Redax
+---------------
+react router(for routing)
+6.strong community support
+7.examples----Instagram,facebook
+
+In powershell
+-------------
+npm create vite@latest .
+package name
+your project name -enter
+npm install
+npm run dev
+
+
+<strictMode>---set of instruction
+in this we get errors clearly
+
+app.jsx reflects--main.jsx---index.html
+
+anything we change in app.jsx
+
+
+rafce---create a  function component in defalut by using Es7+ features---it contain functional components,class components--in app.jsx
+
+Functional components
+------------
+Definition---
+A functional component is a javascript that returns "JSX".
+function welcome(){
+  return <h1>hello</h1>;
+}
+or arrow function
+const welcome=()=><h1>welcome</h2>;
+
+use "pascalcase" the first letter should capital "Mycomponent"(correct)  "myComponets"(wrong)
+
+Props in react
+-------------------------
+props(short for prosperities) allows you to pass data from parent component to child component
+
+const User=(props)->{
+ return <h3>hello,{props.name}</h3>
+}
+
+props drilling-----
+props drilling means passing data from a top level component down to deeply nested components, even if intermediate component don't need to use that data ,but just pass it along.
+ this often makes your code harder to maintain ,escipally as component tree grows larger
+
+example:
+function App(){
+const name="Charlie";
+return <parent name={name}/>
+//parent.jsx
+function parent(props){
+return <child name={props.name}/>
+}
+
+//child.jsx
+function child(){
+return <h1>hello,{props.name}</h1>;
+}
+10-05-25
+---------------------
+
+Hooks
+------------------------------------------- 
+Hooks are special JavaScript function introduced in React 16.8 that allow functional components to use features like state,lifecycle  methods ,and more features that were earlier available only in class component
+
+why Hooks?
+cleaner,simpler code using function insted of classes.
+Easier reuse of logic .
+there 7 hooks
+
+
+useState-------state management
+useEffect------side effects/lifecycle methods
+useRef---------Accessing and persisting DOM values
+useContext
+
+1.useState
+-----------------------------
+useState is a React hook that allows local state management in a functional component.
+Synatax:const [state,setState]=useState{intialvalue)
+state=current value
+setState=updation
+initialvalue=starting valuefor the state(string,number)
+
+2.useEffect
+---------------
+useEffect is a hook that lets you run side effects(Api calls,dom updates,subscriptions,title) like fetching data ,setting up subscripition or manually updating the dom
+syntax:
+useEffect (()=>{
+//effect code
+return ()=>{
+//optional cleanup code
+};
+},[dependenices];
+
+Run "after render"
+Runs again if value in dependencies  change
+
+12-05-25
+------------------------------
+3.useRef---Referencing DOM elements or persistent values
+Definition--useRef is a hook that returns a mutable object which persist across renders.It is mainly used for:
+Accessing DOM elements(like input,video ,etc)
+Storing any mutable value without triggering a re-render.
+example
+------------
+import React, { useRef } from 'react'
+
+const InputRef = () => {
+    const inputRef=useRef()
+    const handleClick=()=>{
+        inputRef.current.focus()
+    }
+  return (
+    <div>
+    <input type="text" ref={inputRef} />
+    <button onClick={handleClick}>Submit</button>
+    </div>
+  )
+}
+
+export default InputRef
+
+display Complete3Hooks example:
+import React, { useEffect, useRef, useState } from 'react'
+
+function Complete3Hooks() {
+    const[count,setCount]=useState(0)
+    const prevCountRef=useRef()
+    useEffect(()=>{
+        prevCountRef.current=count
+
+    },[count])
+  return (
+    <div>
+        <h1>Now:{count}</h1>
+        <h2>Before:{prevCountRef.current}</h2>
+        <button onClick={()=>setCount(count+1)}>Increment</button>
+    </div>
+  )
+}
+
+export default Complete3Hooks
+
+4.useContext Hook--------
+Definition----'useContext' allows you t access values from a react.context without passing props manually trough every level(avoids props drilling)
+syntax:const value=useContext(MyContext);
+
+5.useReducer--used for more complex state logic(like redux-style state update)
+syntax:const[state,dispatch]=useReducer(reducerFn,initialState);
+
+6.useMemo----------
+->memorizes a calculated value and only recomputes it when its dependencies change.
+Syn:
+const result= useMemo(()=> computeHeavy(input),[input]);  //[input]-dependency
+example:
+const expensiveResult=useMemo(()=>{return heavyCalcualation(num);},[num]);
+
+7.useCallback hook----useCallback memorize a function reference so it doesn't get recreated unless dependencies change.
+syntax:const memorizedFn=usseCallback(()=>doSomething(),[dependencies]);
+
+13-05-25
+-----------------
+custom Hook
+----------------
+defiition---A custom hook is a javascript function whose name start with "use"  and they may call other hooks inside it.
+
+why use it:
+extract and reuse logic across components
+keep component clean and dry.
+
+routing----
+import -----npm install react-router-dom
+we should import 4things
+import{ BrowserRouter as Router,Routes,}from "react-router-dom"
+
+
+import React from 'react'
+
+import{  BrowserRouter as Router,Routes,Route} from "react-router-dom"
+import Home from './Components/Home'
+import About from './Components/About'
+import Skills from './Components/Skills'
+import Projects from './Components/Projects'
+ 
+const App = () => {
+  return (
+    <>
+    <Router>
+      <Routes>
+        <Route path="/home"  element={<Home/> }/>
+        <Route path="/about" element={<About/> }/>
+        <Route path="/skills"  element={<Skills/> }/>
+        <Route path="/project" element={<Projects/> }/>
+      </Routes>
+    </Router>
+    </>
+  )
+}
+
+export default App
+
+
+14-05-25
+---------------------
+React Bootstrap 
+----------------
+run:npm i react-bootstrap
+
+static Routing
+------------------
+Navigating on component when button is clicked---
+import {  useNavigate } from 'react-router-dom';
+
+function NavScrollExample() {
+    const Navigate =useNavigate()
+    const handleAbout=()=>{
+        Navigate('/about')
+    }
+..
+ <button onClick={handleAbout}>About</button>
+
+
+Dynamic Routing with Data Fetching
+------------------------------
+//app.js
+
+<Route path="/user/:userId" element={<userProfile/>}/>
+
+//userProfile.jsx
+
+import { useParams } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+
+function UserProfile() {
+    const { userId } = useParams();
+    const [user, setUser] = useState(null);
+
+    useEffect(() => {
+        // Correct the URL string interpolation
+        fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
+
+            .then((response) => response.json())
+            .then((data) => setUser(data))
+           
+    }, [userId]);
+
+  
+    if (!user) {
+        return <h1>Loading...</h1>;
+    }
+
+   
+    return (
+        <div>
+            <h1>{user?.name}</h1>
+            <h2>{user?.email}</h2>
+            
+        </div>
+    );
+}
+
+export default UserProfile;
+
+
+nested Routing
+--------------------------
+//app.jsx
+ <Route path="/dashboard" element={<Dashboard/> }>
+        <Route path="pro"  element={<Profiles/> }/>
+        <Route path="settings" element={<Settings/> }/>
+ </Route>
+
+//dashboard.jsx
+
+import React from 'react'
+import { Link, Outlet } from 'react-router-dom'
+
+function Dashboard() {
+  return (
+    <div>
+        <h2>Dashboard</h2>
+        <nav>
+            <Link to="pro">Profile</Link><br></br>
+            <Link to="settings">Settings</Link>
+        </nav>
+        <Outlet/> //Renders nested routes
+    </div>
+  )
+}
+
+export default Dashboard
+
+Protected Routes(Authentication)
+------------------------------------------
+//protected.jsx
+import React from 'react'
+import { Navigate } from 'react-router-dom';
+
+function ProtectedRoute({children}) {
+    const isAuthenticated=false;//replace with real authenticate logic
+  return (
+    isAuthenticated?children:<Navigate to="/home" replace/>
+  )
+}
+
+export default ProtectedRoute
+
+//app.jsx
+
+<Route path='/dashboard' element={<ProtectedRoute><Dashboard/></ProtectedRoute>}/>
+
+404 page notfound
+------------------------
+//NotFound.jsx
+ import React from 'react'
+
+function NotFound() {
+  return (
+    <div>
+        
+        <h1>404--page Not found</h1>
+    </div>
+  )
+}
+
+export default NotFound
+
+//app.js
+<Route path='*' element={<NotFound/>}/>
+
+Lazy Loading(performance boosting)
+-----------------------------------------------
+//app.js
+import {lazy,Suspense} from 'react';
+const home=lazy(()=>import('./home)
+function App(){
+return(<Suspense fallback={<div>Loading.........</div>}>
+<Routes>
+<Route path='/' element ={<Home/>}/>
+</Routes>
+</Suspense>
+);
+}
+
+Explanation
+-------------
+'lazy()'-dynamically() imports components
+'suspense'-shows a fallback during loading
+
+19-05-25
+---------------------
+add icons in react---npm install react-icons
+cloning in git----git clone https://github.com/vamsi123-paidi/nec-react.git
+checkout---git checkout -b Hashmi
+git add .
+git commit -m "msg"
+git push -b Hashmi
+git push origin Hashmi 
+
+20-05-25
+------------------------
+Backend---server side logic
+----------------------------------------------------------------------------------
+DNS---Domain name server or Domain name system server
+         www.google.com --DNS(convert into binarys)
+request------------------------>response
+  |                                |
+frontend<------------------------Backend
+           HomePage
+javascript is everywhere
+node.js------javascript
+mangodb-----it doesnot have specific structure(no sql),we can use in real time applications,inthis we use schemes
+Express.js---it is a framework of node.js
+
+why express instead of node.js?
+--------------------------
+faster
+code realiability
+nodemon(error handling)
+
+what is node.js?
+node js is a javascript runtime environment(cmd,powershell) that allows you to run javascript code outside the browser mainly used for building backend(server-side)application.
+
+why node.js was created?
+originally ,javascript was only used in browser.developers wanted to use it on the server too-and that's why node.js was created in 2009 by ryan dahl.it uses the v8 javascript engine (the same used in google chrome)to execute javascript code on the server.
+
+
+key-features:
+---------------------------------------
+non blocking i/o--------------node.js is most famous for not blocking i/o--handles multiple requests at the same time(asynchronous)
+event driven architecture---reacts to events like "request received","file read complete",etc
+single threaded --but very efficient due to the event loop
+fast performance--because it was the v8 engine
+cross platform---works on windows,macOS,and Linux.
+
+what is mangodb?
+for database and storing data
+ 
+22-05-25
+---------------------------------
+----------Node.js-------------
+Eventloop---
+microtasks-----fetching
+macrotasks----timers(settimeout)
+
+
+     call stack               
+                       |-----------microtasks
+       |               | 
+event loop-------------|
+       |               |
+     iterations        |-----------macrotasks
+                       |
+Event ----single input and response--it can more than an events
+Event driven architecture
+--------------------------------
+-node.js works on events and listeners
+-instead of following step-by-steps instructions,node.js waits and reacts to events
+-for example
+   ---when a user sends a request --an event is triggered
+   ---when a file is read-->another event is triggered.
+-each event has a callback function that runs when the event occurs
+-this makes node.js great for apps that needs to handles may users at once(like chat apps or real time updates)
+Event
+   |
+event emmitter------------loop-----{ }
+                                  event handler
+                                  
+what can you build with node.js?
+-web applications
+-real-time chat apps(like whatapp clone)
+-RESTful Api
+-CLI
+-microservices
+-streaming services
+how node.js works?
+yourcode
+   |
+[v8 engine]--runs js
+   |
+[libuv]--handles i/o(eg:fs,http)
+   |
+thread pool--offloads long tasks
+  |
+event loop--waits for tasks to finish
+  |
+callbacks--runs when task is ready
+
+server initialization
+---------------------------
+npm init
+or
+npm init -y
+create server.js
+-http serve creation in node.js
+ what is an Http server?
+an http server handles servers request 
+example:
+const http=require('http')
+const server=http.createServer((req,res)=>{
+    res.writeHead(200,{'content-type':'text/plain'});
+    res.end("hello from node.js server!")
+});
+server.listen(3000,()=>{
+    console.log("server is running at http://localhost:3000/")
+});
+
+
+modules---the code is reusable 
+
+types of modules
+core module
+local module--you own custom files
+third-party modules-installed via npm
+
+1.core module :
+Example:
+const os=require("os")
+console.log('OS platform :',os.platform());
+
+output:OS platform : win32
+
+2.local module:
+example:
+math.js
+
+function add(a,b){
+    return a+b;
+}
+module.exports=add
+
+server.js
+
+const add=require('./math');
+console.log(add(5,3));//output:8
+
+3.third-party module 
+npm install moment
+example:
+const moment=require('moment');
+console.log(moment().format('MM DD YYYY,h:mm:ss a'))//output:05 22 2025,12:07:06 pm
+ 
+add time
+console.log(moment().add(7,'days').format('YYYY-MM-DD'))
+subtract time
+console.log(moment().subtract(1,'months').format('YYYY-MM-DD'))
+
+file operatios(CRUD)
+-------------------------------------
+create/write file
+-----------------------------------
+const fs=require('fs');
+fs.writeFileSync("student.txt",'hello students!');
+
+Read file
+-----------------------------------
+const fs=require('fs');
+const content=fs.readFileSync('student.txt','utf8');
+console.log(content)
+update file
+------------------------------
+const content=fs.appendFileSync("student.txt",'welcome to the Node.js') appends the content in the file 
+const content=fs.writeFileSync("student.txt",'good morning')update the data in the file 
+
+delete file
+---------------------------
+const c=fs.unlinkSync("student.txt")
+
+nodemailer
+-----------------------
+npm install nodemailer
+
+Nodemailer.js
+---------------
+const nodemailer=require('nodemailer')
+//setup transport
+let transporter=nodemailer.createTransport({
+    service:'gmail',
+    auth:{
+        user:'patanhashmi20@gmail.com',
+        pass:'rnqo nyog ezwb lkdu'
+    }
+});
+
+//emailOptions
+let mailOptions={
+    from:'patanhashmi20@gmail.com',
+    to:'rbhargavi780@gmail.com',
+    subject:'node.js email example',
+    text:"Hello!  Bhagi this is a exmaple for nodemailer"
+};
+//send email
+transporter.sendMail(mailOptions,(error,info)=>{
+    if(error){
+        return console.log("Error:",error);
+    }
+    console.log("Email sent:",info.response)
+})
+
+
+
+23-05-25
+-----------------------------------
+search chrome mongodb community server
+install mongodb compass
+in mongodb compass create a local host
+in shell to see all the databases
+
+nosql----not only structured quering language
+documents contain data .
+example
+-----------------------
+{
+ name:hashmi,
+ age:20,
+ Guntur:gnt,
+}
+collection of the documents is called --collection
+collection of collections is called---database
+
+command
+--------------
+>show dbs
+<admin        40.00 KiB
+config       72.00 KiB
+local        72.00 KiB
+studentsDB  128.00 KiB
+
+create the database
+-----------
+>use nec
+<switched to db nec
+creating collection
+----------------------------
+nec>db.createCollection("users")
+<{ ok: 1 }
+>show dbs
+<admin        40.00 KiB
+config       96.00 KiB
+local        72.00 KiB
+nec           8.00 KiB
+studentsDB  128.00 KiB
+inserting one value
+--------------------------------
+>db.users.insertOne({name:"Spongebob",age:30,gpa:3.5})
+<{
+  acknowledged: true,
+  insertedId: ObjectId('68300901f667c7f79a847e7b')
+}
+
+to see the inserted data
+-----------------------------
+>db.users.find()
+<{
+  _id: ObjectId('68300901f667c7f79a847e7b'),
+  name: 'Spongebob',
+  age: 30,
+  gpa: 3.5
+}
+
+inserting many values
+-----------------------------------
+>db.users.insertMany([{name:"patrick",age:25,gpa:1.5},{name:"sandy",age:27,gpa:4.0},{name:"gary",age:16,gpa:2.5}])
+<{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('68300f11f667c7f79a847e7c'),
+    '1': ObjectId('68300f11f667c7f79a847e7d'),
+    '2': ObjectId('68300f11f667c7f79a847e7e')
+  }
+}
+to see the inserted data
+------------------------------
+>to see the inserted data
+<{
+  _id: ObjectId('68300901f667c7f79a847e7b'),
+  name: 'Spongebob',
+  age: 30,
+  gpa: 3.5
+}
+{
+  _id: ObjectId('68300f11f667c7f79a847e7c'),
+  name: 'patrick',
+  age: 25,
+  gpa: 1.5
+}
+{
+  _id: ObjectId('68300f11f667c7f79a847e7d'),
+  name: 'sandy',
+  age: 27,
+  gpa: 4
+}
+
+  _id: ObjectId('68300f11f667c7f79a847e7e'),
+  name: 'gary',
+  age: 16,
+  gpa: 2.5
+}
+
+inserting different types of objects
+--------------------------------
+>db.users.insertOne({name:"pinky",age:22,gpa:1.8,fullTime:false,registration:new Date(),graduationDate:null,courses:["biology","chemistry","calculus"],address:{street:"123 fake st",city:"new york",zip:12345}})
+<{
+  acknowledged: true,
+  insertedId: ObjectId('683010cdf667c7f79a847e80')
+}
+
+sorting 
+-------------------
+>db.users.find().sort({name:1})-----asce
+<capital name first 
+>db.users.find().sort({name:1})-------------desc
+
+limit
+-------------------
+>db.users.find().limit(1)
+<{
+  _id: ObjectId('68300901f667c7f79a847e7b'),
+  name: 'Spongebob',
+  age: 30,
+  gpa: 3.5
+}
+ sorting and limit
+------------------------------
+>db.users.find().sort({gpa:-1}).limit(3)
+
+finding data
+---------------------------
+>db.users.find({name:"sandy"});
+>db.users.find({courses:"biology"});
+
+projecting specific data
+-----------------------------
+>db.users.find({},{name:true})
+it print all names and print with ids
+>db.users.find({},{_id:false,name:true})
+only names will display
+>db.users.find({},{_id:false,name:true,age:true})
+we will get name age
+
+update
+-------------------
+>db.users.updateOne({name:"Spongebob"},{$set:{fullTime:true}})
+<{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+>db.users.find({name:"Spongebob"})
+<{
+  _id: ObjectId('68300901f667c7f79a847e7b'),
+  name: 'Spongebob',
+  age: 30,
+  gpa: 3.5,
+  fullTime: true
+}
+
+existing data deleting
+---------------------------
+>db.users.updateOne({age:"22"},{$unset:{fullTime:""}})
+
+updatemany
+-------------------
+>db.users.updateMany({},{$set:{fullTime:false}})
+<{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 6,
+  modifiedCount: 5,
+  upsertedCount: 0
+}
+>db.users.find()
+<update all the date with fulltime:false
+
+exists
+------------------------------
+>db.users.updateMany({fullTime:{$exists:false}},{$set:{fullTime:true}})
+<{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+
+deleteone-delete the single document
+--------------------------
+>db.users.deleteOne({name:"larry"})
+<{
+  acknowledged: true,
+  deletedCount: 1
+}
+
+deletemany-deleting collection of documents
+
+
+comparsion operator
+-----------------------
+ne--not equal to
+gt-greater than
+lt-less than
+gte-graeterthan equal to
+lte-lessthan equalto
+gtne-greaterthan and not equal to
+ltne-lessthan and not equal to
+
+examples:
+>db.users.find({name:{$ne:"Spongebob"}})
+>db.users.find({age:{$gt:20}})
+>db.users.find({gpa:{$gt:2.0}})
+..............
+
+in,nin
+-------------------
+>db.users.find({name:{$in:["Spongebob","patrick","sandy"]}})
+>db.users.find({name:{$nin:["Spongebob","patrick","sandy"]}})
+
+logical operators
+----------------------------
+$and--->db.users.find({$and:[{fullTime:false},{age:{$lte:22}}]})-----multiply
+$or--->db.users.find({$or:[{fullTime:false},{age:{$lte:22}}]})-----add
+$nor--->db.users.find({$nor:[{fullTime:true},{age:{$lte:22}}]})-----not satisify both conditions
+
+createnew database 
+----------------------------
+use doraemon
+db.createCollections("orders")
+
+>db.orders.insertMany([{_id:1,customer:"A",amount:120,date:ISODate("2023-01-01"),items:["pen","book"]},{_id:2,customer:"B",amount:80,date:ISODate("2023-01-02"),items:["pencil"]},{_id:3,customer:"C",amount:200,date:ISODate("2023-02-03"),items:["eraser"]}]);
+
+$match(filtering)
+---------------------------------
+this is used for fast response
+>db.orders.aggregate([{$match:{amount:{$gt:100}}}])
+<{
+  _id: 1,
+  customer: 'A',
+  amount: 120,
+  date: 2023-01-01T00:00:00.000Z,
+  items: [
+    'pen',
+    'book'
+  ]
+}
+{
+  _id: 3,
+  customer: 'C',
+  amount: 200,
+  date: 2023-02-03T00:00:00.000Z,
+  items: [
+    'eraser'
+  ]
+}
+
+$group(with accumulators)
+------------------------------
+>db.orders.aggregate([{$group:{_id:"$customer",total:{$sum:"$amount"},avg:{$avg:"$amount"},max:{$max:"$amount"},min:{$min:"$amount"}}}]);
+
+24-05-25
+----------------------------------
+$project(reshaping)--for changing the fields 
+-------------------------------
+>db.orders.aggregate([{$project:{customer:1,amount:1,discount:{$multiply:["$amount",0.1]},year:{$year:"$date"}}}])
+<{
+  _id: 1,
+  customer: 'A',
+  amount: 120,
+  discount: 12,
+  year: 2023
+}
+{
+  _id: 2,
+  customer: 'B',
+  amount: 80,
+  discount: 8,
+  year: 2023
+}
+{
+  _id: 3,
+  customer: 'C',
+  amount: 200,
+  discount: 20,
+  year: 2023
+}
+
+$unwind(array flattening)-if an field have more than one item in an array then unwind is used to create seperat document
+--------------------------------------
+>db.orders.aggregate([{$unwind:"$items"}])
+<{
+  _id: 1,
+  customer: 'A',
+  amount: 120,
+  date: 2023-01-01T00:00:00.000Z,
+  items: 'pen'
+}
+
+  _id: 1,
+  customer: 'A',
+  amount: 120,
+  date: 2023-01-01T00:00:00.000Z,
+  items: 'book'
+}
+
+  _id: 2,
+  customer: 'B',
+  amount: 80,
+  date: 2023-01-02T00:00:00.000Z,
+  items: 'pencil'
+}
+{
+  _id: 3,
+  customer: 'C',
+  amount: 200,
+  date: 2023-02-03T00:00:00.000Z,
+  items: 'eraser'
+}
+
+$lookup(joins)
+--------------------------------------------------
+>db.orders.aggregate([{$lookup:{from:"customers",localField:"customer",foreignField:"_id",as:"customer_info"}}])
+<{
+  _id: 1,
+  customer: 'A',
+  amount: 120,
+  date: 2023-01-01T00:00:00.000Z,
+  items: [
+    'pen',
+    'book'
+  ],
+  customer_info: [
+    {
+      _id: 'A',
+      name: 'Alice'
+    }
+  ]
+}
+{
+  _id: 2,
+  customer: 'B',
+  amount: 80,
+  date: 2023-01-02T00:00:00.000Z,
+  items: [
+    'pencil'
+  ],
+  customer_info: []
+}
+{
+  _id: 3,
+  customer: 'C',
+  amount: 200,
+  date: 2023-02-03T00:00:00.000Z,
+  items: [
+    'eraser'
+  ],
+  customer_info: []
+}
+
+$bucket(group by ranges)
+----------------------------------------
+>db.orders.aggregate([{$bucket:{groupBy:"$amount",boundaries:[0,100,200,300],default:"Other",output:{count:{$sum:1},orders:{$push:"$_id"}}}}])
+<{
+  _id: 0,
+  count: 1,
+  orders: [
+    2
+  ]
+}
+{
+  _id: 100,
+  count: 1,
+  orders: [
+    1
+  ]
+}
+{
+  _id: 100,
+  count: 1,
+  orders: [
+    1
+  ]
+}
+
+2.complete Indexing methods
+--------------------------------------
+1.single field index
+>db.orders.createIndex({customer:1})
+<customer_1
+2.comound index
+>db.orders.createIndex({customer:1,amount:-1})
+<customer_1_amount_-1
+3.multikey index(arrays)
+>db.orders.createIndex({items:1})
+<items_1
+4.TextIndex
+>db.orders.createIndex({items:"text"})
+5.Hashed Index: Uses hashed values of a field for shard key indexing and fast equality lookups.syn:db.collection.createIndex({ fieldName: "hashed" })
+
+
+6.Geospatial 2d Index: Indexes coordinate pairs on flat maps to support location-based queries.syn:db.collection.createIndex({ location: "2d" })
+
+7.Geospatial 2dsphere Index: Indexes GeoJSON data for queries on a spherical surface (e.g., Earth).syn:db.collection.createIndex({ location: "2dsphere" })
+
+
+8.Wildcard Index: Indexes all fields or fields with dynamic names in documents, useful for flexible schemas.db.collection.createIndex({ "$": 1 })
+
+
+9.Partial Index: Indexes only documents that meet a filter expression to reduce index size and improve write performance.synt:db.collection.createIndex(
+  { fieldName: 1 },
+  { partialFilterExpression: { fieldName: { $gt: value } } }
+)
+
+
+Sparse Index: Indexes only documents that contain the indexed field, ignoring documents where it is missing or null.syn:db.collection.createIndex({ fieldName: 1 }, { sparse: true })
+
+
+TTL (Time-To-Live) Index: Automatically deletes documents after a specified time for managing expiring data.syn:db.collection.createIndex({ createdAt: 1 }, { expireAfterSeconds: 3600 })
+
+//view all indexs
+>db.orders.getIndexes()
+
+//check index usage
+>db.orders.find({customer:"A"}).explain("executionStats")
+
+performance optimization
+-----------------------------
+//covered query
+>db.orders.createIndex({customer:1,amount:1})
+customer_1_amount_1
+>db.orders.find({customer:"A"},{_id:0,customer:1,amount:1})
+{
+  customer: 'A',
+  amount: 120
+}
+
+//index intersection
+>db.orders.createIndex({customer:1})
+customer_1
+>db.orders.createIndex({amount:1})
+amount_1
+>db.orders.find({customer:"A",amount:{$gt:100}}).explain()//use both indexes
+
+Mongodb Advanced concept
+-------------------------------------
+1.Data Modelling
+--------------------------
+
+1.1 Embedded documents  Approach use when:
+--1.1 or 1:few realtionships
+--data is read together frequently
+--Atomic updates are critical
+ example:
+{
+  "_id": 1,
+  "name": "Alice",
+  "orders": [
+    { "orderId": 101, "total": 500 },
+    { "orderId": 102, "total": 300 }
+  ]
+}
+
+
+
+1.2referenced document approach use when:
+--1:many or many :many relationships
+--data grows without bound
+--independent access needed
+
+
+//authors collection
+>db.authors.insertOne({_id:"auth202",name:"jane smith",speciality:"database systems"})
+//books collection
+>db.books.insertMany([{_id:"book305",title:"MongoDb Essentials",author_id:"auth202"},{_id:"book306",title:"Advanced MongoDB",author_id:"auth203"},{_id:"book307",title:"Mongodb Atlas",author_id:"auth204"},{_id:"book308",title:"Mongoose",author_id:"auth205"}])
+
+1.3 Hybrid approach with $lookup
+In this more than one aggregate commands using
+example:
+>db.books.aggregate([{$lookup:{from:"authors",localField:"author_id",foreignField:"_id",as:"author_details"}},{$unwind:"$author_details"},{$project:{title:1,"author_details.name":1}}])
+<{
+  _id: 'book305',
+  title: 'MongoDb Essentials',
+  author_details: {
+    name: 'jane smith'
+  }
+}
+>db.authors.aggregate([{$lookup:{from:"books",localField:"_id",foreignField:"author_id",as:"books_details"}},{$unwind:"$books_details"},{$project:{title:1,"books_details.title":1}}])
+
+BSON-binary json
+
+Basic Schema validations
+-------------------------------------
+Schema--for storing data ,and used for validations
+
+>db.createCollection("employees", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["employee_id", "full_name", "department"],
+      properties: {
+        employee_id: {
+          bsonType: "string",
+          pattern: "^EMP-[0-9]{5}$",
+          description: "Must be in format EMP-12345"
+        },
+        full_name: {
+          bsonType: "string",
+          minLength: 3,
+          maxLength: 25
+        },
+        department: {
+          enum: ["Engineering", "HR", "Finance", "Marketing"],
+          description: "Must be a valid department"
+        },
+        salary: {
+          bsonType: "double",
+          minimum: 30000,
+          maximum: 500000
+        }
+      }
+    }
+  }
+});
+
+<{ ok: 1 }
+>db.employees.insertOne({employee_id:"EMP-12345",department:"HR",full_name:"Nobi"})
+<{
+  acknowledged: true,
+  insertedId: ObjectId('683197ade42604f7a5af08fd')
+}
+>db.employees.insertOne({employee_id:"EMP-1345",department:"sales",full_name:"Nobi"})
+MongoServerError: Document failed validation
+
+form validation
+-------------------------
+>db.createCollection("forms", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["username", "email_id", "password"],
+      properties: {
+        username: {
+          bsonType: "string",
+          pattern: "^[a-zA-Z0-9]{3,16}$",
+          description: "Username must be 3-16 characters long and alphanumeric only."
+        },
+        email_id: {
+          bsonType: "string",
+          pattern: "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+          description: "Must be a valid email address."
+        },
+        password: {
+          bsonType: "string",
+          minLength: 8,
+          maxLength: 15,
+          pattern: "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$",
+          description: "Password must be 8-15 characters, include upper/lowercase letters, a number, and a special character."
+        }
+      }
+    }
+  }
+});
+
+
+>db.forms.insertOne({
+  username: "Hashmi20",
+  email_id: "patanhashmi20@gmail.com",
+  password: "Hashmi$20"
+})
+
+26-05-25
+-----------------------------------------------
+
+Express.js---Table of contents(TOC)
+-------------------------------------
+what is Express.js?
+Express.js is a node.js webapplication framework that simplifies building server-side applications.
+
+why we use Express.js?
+writing server logic in plain node.js is lengthy and repetitive
+Express provides a clean ,simple API to handle routs,HTTP requests,and more
+
+npm i express //installation
+
+1.1
+Express.js
+---------------
+const express=require('express');
+const app=express();
+const port=3000;
+app.get("/",(req,res)=>{
+    res.send("This is my first server")
+})
+app.listen(port,()=>{
+    console.log(`server is running at http://localhost:${port}`)
+})
+
+1.2 Why Use Express with Node.js?
+
+| **Feature**             | **Node.js (Core)** | **Express.js**        |
+| ----------------------- | ------------------ | --------------------- |
+| **Routing**             | Manual             | Easy with `app.get()` |
+| **Middleware support**  | Manual             | Built-in              |
+| **API creation**        | Tedious            | Fast and clean        |
+| **Static file serving** | Manual setup       | Built-in methods      |
+
+Example:(routing)
+const express=require('express');
+const app=express();
+const port=3000;
+// app.get("/",(req,res)=>{
+//     res.send("This is my first server")
+// })
+
+//home route
+app.get('/hello',(req,res)=>{
+    res.send("<h1>hello welcome to the home page</h1>")
+})
+app.listen(port,()=>{
+    console.log(`server is running at http://localhost:${port}`)
+})
+
+//info of the method
+app.get('/info',(req,res)=>{
+    console.log("Request Method:",req.method)//Request Method: GET
+    console.log("Request url:",req.url)//Request url: /info
+    res.send("<h1>hello welcome to the info page</h1>")
+})
+
+//
+app.get('/greet',(req,res)=>{
+    const name=req.query.name
+    res.send(`Hello ${name || 'guest!'}`)
+}
+
+in browser enter  http://localhost:3000/greet?name=Hashmi  //for displaying ur name
+
+Routing
+-----------------------
+what is Routing?
+routing in express means defining how your server response to different http request(GET,POST,etc.) for different paths(urls)
+
+//geting all student data
+const express=require('express')
+const app=express()
+const port=3000
+//enable json body parser
+app.use(express.json());
+//temporary student list
+let students=[{id:1,name:"anjali",course:"math"},{id:2,name:"anu",course:"C"},{id:3,name:"nobi",course:"python"},{id:4,name:"kiran",course:"C++"},{id:5,name:"suneo",course:"science"}]
+app.get("/",(req,res)=>{
+    res.send(students)
+})
+app.listen(port,()=>{
+    console.log(`http://localhost:${port}`)
+})
+
+
+//get a single students by ID
+app.get('/students/:id',(req,res)=>{
+    const id=parseInt(req.params.id);
+    const student=students.find(s=>s.id===id);
+    student?res.json(student):res.status(404).send("student not found")
+})
+
