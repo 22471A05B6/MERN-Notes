@@ -2949,3 +2949,157 @@ app.get('/students/:id',(req,res)=>{
     student?res.json(student):res.status(404).send("student not found")
 })
 
+27-05-25
+----------------
+
+post method
+-------
+const express=require('express')
+const app=express()
+const port=3000
+//enable json body parser
+app.use(express.json());
+//temporary student list
+let students=[{id:1,name:"anjali",course:"math"},{id:2,name:"anu",course:"C"},{id:3,name:"nobi",course:"python"},{id:4,name:"kiran",course:"C++"},{id:5,name:"suneo",course:"science"}]
+
+
+//get a single students by ID
+app.get('/students/:id',(req,res)=>{
+    const id=parseInt(req.params.id);
+    const student=students.find(s=>s.id===id)
+    student?res.json(student):res.status(404).send("student not found")
+})
+
+//post
+app.post('/students',(req,res)=>{
+    const {name,course}=req.body;
+    const newStudent={
+        id:students.length+1,
+        name,
+        course
+    };
+    students.push(newStudent)
+    res.status(201).json(newStudent)
+
+});
+
+app.listen(port,()=>{
+    console.log(`http://localhost:${port}`)
+})
+
+
+//put
+app.put('/students/:id',(req,res)=>{
+    const id=parseInt(req.params.id);
+    const {name,course}=req.body;
+    const student=students.find(s=>s.id===id)
+    if(student){
+        student.name=name ||student.name;
+        student.course=course || student.course;
+        res.json(student);
+    }else{
+        res.status(404).send('student not found');
+    }
+})
+
+Middleware
+-------------------
+what is Middleware?
+Middleware is a function that runs between the client request and the server response.it can log requests,authenticate users,parse request data,modify request or response,stop or continue the request cycle
+
+It has this structure:
+js
+(req,res,next)=>{...}
+
+Example:Logger Middleware
+--------------------------------
+
+what logger Middleware does in Express.js?
+A logger Middlewarein express logs details about each incoming http request to your server.
+this includes information like:
+http method(GET,POST,etc)
+requested URL(api/users)
+response status code(200,404,...)
+time taken to process the request
+
+logger is used for debugging,montoring,auditing
+
+urlencoded
+-----------------
+express.urlencoded() is a bulit in Middleware in express used to parse incoming request bodies with URL-encoded data (the format used for html forms).
+options:
+extended:false-parse data using the querystring library(limited,simple)
+extended:true-parses data using the qs library(allows nested objects)
+example:
+app.use(express.urlencoded({extended:true}))//handle form data
+app.post('/submit',(req,res)=>{
+    res.send(`Received:${req.body.name}`)
+})
+//in postman select formcode and enter key and value--name and Hashmi
+o/p:Received:Hashmi
+
+example:serving static files
+app.use('/static',express.static('public'))//folder:public
+create public folder
+------Hello.txt----hello world
+in url enter localhost:3000/static/Hello.txt---->o/p:hello world
+
+using third-party Middleware('morgan')
+--it adds features likes logging ,security,etc
+what morgan does?
+when a client makes a request (like get/api/users),morgan logs details about that request to the console
+this includes information like:
+http method(GET,POST,etc)
+requested URL(api/users)
+response status code(200,404,...)
+time taken to process the request
+
+what is cors in express?
+CORS stands for cross-origin resource sharing.it is a security feature implemented by browsers that blocks requests from different origins unless explicity allowed by the server.
+
+why do we need cors in express?
+when you frendend(react,etc)runs on http://localhost:3000  and your express backend runs on http://localhost:5000 ,the browser sees this as a cross-orgins requestand may blocks it unless CORS is enable
+that's where the cors Middleware comes in
+
+
+const express=require('express')
+const morgan=require('morgan')
+const cors=require('cors');
+const app=express();
+ 
+app.use(morgan('dev'));//request logs
+app.use(cors());//enables cross-origin support
+app.get('/',(req,res)=>{
+    res.send('third party middleware demo!')
+})
+app.listen(3000)
+
+custom middleware functions
+-----------------------------------
+create your own middle for:
+
+const express=require('express')
+const app=express();
+
+app.use(express.json())
+function logger(req,res,next){
+    console.log(`[$new Date().toISOString()}]${req.method} ${req.url}`)
+    next()
+}
+function auth(req,res,next){
+    const token=req.header['authorization']
+    if(token=='secretkey123'){
+        next()
+    }
+    else{
+        res.status(400)
+    }
+}
+app.use(logger)
+app.get('/pubic',(req,res)=>{
+    res.send('no auth')
+})
+app.get('/secure',auth,(req,res)=>{
+    res.send('protected')
+})
+app.listen(3000)
