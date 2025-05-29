@@ -3103,3 +3103,198 @@ app.get('/secure',auth,(req,res)=>{
     res.send('protected')
 })
 app.listen(3000)
+
+28-05-25
+----------------------------
+**Static files in Express.js---(static files--contain html css javascript)
+we use bulit-in middleware---express.static
+
+for form validation
+---index.html---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Registration</h1>
+    <form action="/submit-form" method="POST">
+         <label >Name:</label>
+        <input type="text" name="name" required minlength="3" maxlength="30"/><br><br>
+        <label >Email:</label>
+        <input type="email" name="email" required/><br><br>
+        <label >Course:</label>
+        <input type="text" name="course" required minlength="2" maxlength="20"/><br><br>
+        <label >Age:</label>
+        <input type="number" name="age" required minlength="10" maxlength="100"/><br><br>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
+
+----server.js--
+const express=require('express')
+const app=express();
+const port=3000;
+//serve static files from the "public" folder
+app.use(express.static('public'));
+//middleware 
+app.use(express.urlencoded({extended:true}));
+app.get('/',(req,res)=>{
+    res.sendFiles(__dirname +'/public/index.html');
+});
+//post
+app.post('/submit-form',(req,res)=>{
+    const {name,email,course,age}=req.body;
+    const error=[];
+    //validate name:required,length 3-30
+    if(!name || name.trim().length<3||name.trim().length>=30){
+        error.push('name must be between 3 and 30 letters')
+    }
+    //validate email:required,simple regrex
+    const emailRegex=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if(!email ||!emailRegex.test(email)){
+        error.push('valid email is required.')
+    }
+    //validate course:required,length 2-20
+    if(!course || course.trim().length<2||course.trim().length>=20){
+        error.push('coures must be between 2 and 20 characters')
+    }
+
+    //validate age
+    const ageNum=Number(age)
+    if(!age || isNaN(ageNum)||ageNum<10 ||ageNum>100){
+        error.push('Age must  be a number between 10 and 100.')
+    }
+    if(error.length>0){
+        //if error found ,response with error message and a link to retry
+        res.status(400).send(`<h3>Error:</h3>
+            <ul>${error.map(e=>`<li>${e}</li>`).join('')}</ul>
+            <a href='/index.html'>GO Back</a>`
+        );      
+    }
+    else{
+        //if valid show sucess message and submitted data
+        res.status(200).send(`
+            <h2>Student Registered Sucessfully!</h2>
+             <p><strong>Name:</strong>${name}</p>
+             <p><strong>Email:</strong>${email}</p>
+             <p><strong>Age:</strong>${age}</p>
+             <p><strong>Course:</strong>${course}</p>
+             <a href='/index.html'>Register another student</a>`);
+    }
+})
+
+app.listen(port,()=>{
+    console.log(`server running at http://localhost:${port}`)
+});
+
+**Database Integration (with mongodb Atlas & Mongoose)
+----------------------------------------------------------
+chrome--MongoDB Atlas
+
+folder structure
+-----------------------
+dbconnection
+  |Models
+     |student.js
+  |Node_modules
+  |.env
+  |server.js
+
+student.js
+----------
+const mongoose=require('mongoose');
+const StudentSchema=new mongoose.Schema({
+    name:{
+        type:String,
+        required:true
+    },
+    course:{
+        type:String,
+        required:true
+    },
+});
+module.exports=mongoose.model('Models',StudentSchema)
+
+server.js-------
+const express=require('express')
+const mongoose=require('mongoose')
+const dotenv=require('dotenv')
+const app=express()
+app.use(express.json())
+const Student=require('./Models/student')
+dotenv.config();
+const port=process.env.port||3000
+const MongoUrl=process.env.MongoUrl
+try{
+    mongoose.connect(MongoUrl)
+    console.log("database connected")
+}catch{
+    console.log('mongo error connection')
+}
+
+
+app.listen(port,()=>{
+    console.log(`The server is running at http://localhost:${port}`)
+})
+
+.env
+-------------
+MongoUrl=mongodb+srv://patanhashmi20:root@dbconnection.e5r8vap.mongodb.net/?retryWrites=true&w=majority&appName=DBconnection
+port=3000
+
+crud operation
+------------------
+//post
+app.post('/student',async(req,res)=>{
+    try{
+        const student=new Student(req.body);
+        const saved=await student.save();
+        res.status(201).json(saved);
+    }
+    catch(err){
+        res.status(400).json({error:err.message})
+    }
+});
+output:in mongodb atlas----open ur project--->browse collections-->test--models--ur posted data
+//get all data
+app.get('/student',async(req,res)=>{
+    const student=await Student.find()
+    res.json(student)
+})
+//get by id
+app.get('/student/:id',async(req,res)=>{
+    try{
+        const student=await Student.findById(req.params.id);
+        if(!student) return res.status(404).json({error:'Student not found'});
+        res.json(student)
+    }catch(err){
+        res.status(400).json({error:err.message});
+    }
+})
+//update student
+app.put('/student/:id',async(req,res)=>{
+    try{
+        const updated=await Student.findByIdAndUpdate(req.params.id,req.body,{new :true});
+        if(!updated) return res.status(404).json({error:'Student not found'})
+        res.json(updated)
+    }catch(err){
+        res.status(400).json({error:err.message});
+    }
+})
+//delete
+app.delete('/student/:id',async(req,res)=>{
+    try{
+        const deleted=await Student.findByIdAndDelete(req.params.id);
+        if(!deleted) return res.status(404).json({error:'Student not found'})
+        res.json(deleted)
+    }catch(err){
+        res.status(400).json({error:err.message});
+    }
+})
+
+
+
