@@ -3296,5 +3296,99 @@ app.delete('/student/:id',async(req,res)=>{
     }
 })
 
+29-05-25
+-------------------------------
+**Authentication Middleware
+folder structure
+>Authentication
+  >middleware
+      ..authmiddleware.js                                 legends
+  >model                                                 ------------------------
+    ..user.js                                               >folder
+  ...env                                                    ..files
+  ..package.json(npm init -y)
+  ..server.js
+
+  install--------------
+   npm i express nodemon dotenv mongoose bcryptjs jsonwebtoken
+
+   user.js-------------
+   const mongoose = require('mongoose');
+const bcrypt = require('bcryptjs');
+
+const userSchema = new mongoose.Schema({
+  username: {
+    type: String,
+    required: true,
+    unique: true,
+    trim: true
+  },
+  password: {
+    type: String,
+    required: true
+  }
+});
+
+// Hash password before saving
+userSchema.pre('save', async function(next) {
+  if (!this.isModified('password')) return next();
+  const salt = await bcrypt.genSalt(10);
+  this.password = await bcrypt.hash(this.password, salt);
+  next();
+});
+
+// Method to compare password
+userSchema.methods.comparePassword = function(candidatePassword) {
+  return bcrypt.compare(candidatePassword, this.password);
+};
+
+module.exports = mongoose.model('User', userSchema);
+
+.env----------------
+MongoUrl=mongodb+srv://patanhashmi20:root@connectionsss.mjwaeim.mongodb.net/?retryWrites=true&w=majority&appName=connectionsss
+PORT=3000;
+JWT_SECRET=Hashmi20 
+
+authmiddleware.js---------------
+const jwt = require('jsonwebtoken');
+
+const authenticate = (req, res, next) => {
+  const token = req.header('Authorization')?.replace('Bearer ', '');
+  if (!token) return res.status(401).json({ error: 'No token provided' });
+
+  try {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    req.user = decoded; // put user info in req
+    next();
+  } catch (err) {
+    res.status(401).json({ error: 'Invalid token' });
+  }
+};
+
+module.exports = authenticate;
+
+server.js-------------------
+const jwt = require('jsonwebtoken');
+
+const authenticate = (req, res, next) => {
+  const token = req.header('Authorization')?.replace('Bearer ', '');
+  if (!token) return res.status(401).json({ error: 'No token provided' });
+
+  try {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    req.user = decoded; // put user info in req
+    next();
+  } catch (err) {
+    res.status(401).json({ error: 'Invalid token' });
+  }
+};
+
+module.exports = authenticate;
+
+   
+   
 
 
+
+
+  
